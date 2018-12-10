@@ -1,0 +1,159 @@
+/*
+Color scheme:
+292F36 - gunmetal
+4ECDC4 - medium turquoise
+F7FFF7 - mint cream
+FF7878 - coral reef
+FFEC94 - flavescent
+*/
+
+* { 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+a {
+  color: #FF7878;
+}
+
+body {
+  background-color: #FFF;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  font-size:6vw
+}
+
+h2 {
+  background-color: #FF7878;
+  color: #F7FFF7;
+  text-align: center;
+  font-size:4vw;
+  padding: 0;
+  margin: 0;
+  clear: left;
+}
+
+h3 {
+  font-size:2.5vw;
+  padding: 0;
+}
+
+h4 {
+  font-size:2.0vw;
+  font-weight: 100;
+}
+
+.flex-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  width: 100vw;
+  height: 20vh;
+  background-color: #4ECDC4;
+  color: #F7FFF7;
+  position: fixed;
+  clear:both;
+  text-align: center;
+}
+
+main {
+  display: block;
+  width: 60%;
+  margin: 7% auto;
+}
+
+#main-img {
+  display: block;
+  margin: 7% auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 45%;
+  margin: 5px;
+}
+
+#work-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 30%;
+  justify-content: center;
+  color: #4ECDC4;
+  width: 30%;
+  margin: 10px;
+  float: left;
+  clear: left;
+}
+
+#article-section {
+  background-color: #FF7878;
+  display: inline-block;
+  width: 100%;
+  
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 29%;
+  margin: 5px;
+}
+
+footer {
+  background-color: #292F36;
+  color: #F7FFF7;
+  width: 100%;
+  height: 20%;
+}
+
+.footer-div{
+  flex-basis: 100%;
+  flex-shrink: 3;
+  padding: 10px;
+  float:left;
+  width: 29%;
+}
+
+@media only screen and (max-width: 700px) {
+  
+  .example {
+  display: block;
+  width: 100%;
+  
+}
+  .footer-div{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  footer {
+  background-color: #292F36;
+  color: #F7FFF7;
+  width: 100%;
+  height: auto;
+}
+}
